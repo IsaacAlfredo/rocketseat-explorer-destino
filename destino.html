@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Destino</title>
     <link rel="stylesheet" href="destino.css">
+    <script src="./destino.js" defer></script>
 </head>
 
 <body>
@@ -18,8 +19,9 @@
             <p>Clique em fazer pergunta para que seu destino seja revelado</p>
 
         </header>
-        <input type="text" placeholder="Digite sua pergunta">
-        <button>Fazer pergunta</button>
+        <input id="inputPergunta" type="text" placeholder="Digite sua pergunta">
+        <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer pergunta</button>
+        <h3 id="resposta"></h3>
     </section>
 </body>
 
